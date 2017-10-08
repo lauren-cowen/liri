@@ -1,0 +1,19 @@
+{
+  "name": "interpreter",
+  "version": "1.0.0",
+  "description": "LIRI will take in parameters and return data similar to iPhone's SIRI",
+  "main": "liri.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/laurenc234/liri.git"
+  },
+  "author": "Lauren Cowen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/laurenc234/liri/issues"
+  },
+  "homepage": "https://github.com/laurenc234/liri#readme"
+}

@@ -1,20 +1,12 @@
 var Twitter = require('twitter');
 var Spotify = require('node-spotify-api');
 var request = require('request');
-var twitterKeys = require('./key.js');
+var keys = require('./key.js');
 var fs = require("fs");
 
-var spotify = new Spotify({
-    id: "0fcdf9d307ab48f283fac51f6492a717",
-    secret: "4bf10ba9a7aa49658a28f2da238a3ee9"
-});
+var spotify = new Spotify(keys.sptkey);
 
-var client = new Twitter({
-    consumer_key: twitterKeys.consumer_key,
-    consumer_secret: twitterKeys.consumer_secret,
-    access_token_key: twitterKeys.access_token_key,
-    access_token_secret: twitterKeys.access_token_secret,
-});
+var client = new Twitter(keys.twtkey);
 
 
 var userInput = process.argv;
